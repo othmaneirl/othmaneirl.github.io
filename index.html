@@ -6,16 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mon CV</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 5px 0;
+      font-size: 20px;
+      color: #666;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+
+    .collapsible {
+      background-color: #f9f9f9;
+      color: #333;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .collapsible:hover {
+      background-color: #e6e6e6;
+    }
+
+    .active {
+      background-color: #ccc;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f9f9f9;
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <h1>IRHBOULA Othmane</h1>
-    <h2 id="titre">Etudiant en Ingéniérie</h2>
+    <h2 id="titre">Etudiant en Ingénierie</h2>
     <section>
       <p>Avenue Paul Langevin Villeneuve-d'Ascq</p>
       <p>+33622091247</p>
-      <p></p>oirhboula@gmail.com</p>
+      <p>oirhboula@gmail.com</p>
     </section>
   </header>
   <main>
@@ -27,7 +101,7 @@
         <ul>
           <li>
             <h3>Stage dans une entreprise de massification du courrier</h3>
-            <p><b><a href="https://www.courrierplus.fr/" target="_blank">COURRIERPLUS</a></b>,Villeneuve-d'Ascq, France | 14 Février 2022 / 15 Avril
+            <p><b><a href="https://www.courrierplus.fr/" target="_blank">COURRIERPLUS</a></b>, Villeneuve-d'Ascq, France | 14 Février 2022 / 15 Avril
               2022</p>
             <ul>
               <li>Création d'une base de données pour l'entretien des machines de massification du courrier</li>
@@ -37,7 +111,7 @@
           </li>
           <li>
             <h3>Stage dans une entreprise de réseaux</h3>
-            <p><b><a href="https://www.emploi.ma/recruteur/305788" target="_blank">Integranet</a></b>,Rabat, Maroc | Mars 2018</p>
+            <p><b><a href="https://www.emploi.ma/recruteur/305788" target="_blank">Integranet</a></b>, Rabat, Maroc | Mars 2018</p>
             <ul>
               <li>Travail au sein de l'équipe réseau sur des projets d'installation de dispositifs de prévention
                 d'incendies et de déploiement de réseaux locaux.</li>
@@ -60,18 +134,14 @@
           </li>
           <li>
             <h3>Baccalauréat Général</h3>
-            <p><b><a href="https://www.lycee-descartes.ac.ma/" target="_blank">Lycée Descartes</a></b>, Rabat, Maroc | Juin 2021
+            <p><b><a href="https://www.lycee-descartes.ac.ma/" target="_blank">Lycée Descartes</a></b>, Rabat, Maroc | Juin 2021</p>
             <ul>
               <li>Spécialités Mathématiques, Physique chimie, et Numérique et Sciences de l'Informatique</li>
             </ul>
-            </p>
           </li>
-
-
           <li>
             <h3>International English Language Testing System</h3>
-            <p><b><a href="ielts.pdf" target="_blank">Résultat:7.5</a></b> | Octobre 2020
-            </p>
+            <p><b><a href="ielts.pdf" target="_blank">Résultat:7.5</a></b> | Octobre 2020</p>
           </li>
         </ul>
       </div>
@@ -94,10 +164,10 @@
       </button>
       <div class="content">
         <ul>
-          <li><b>Francais</b>-Bilingue</li>
-          <li><b>Anglais</b>-Bilingue</li>
-          <li><b>Arabe</b>-Bilingue</li>
-          <li><b>Espagnol</b>-Intermediaire</li>
+          <li><b>Français</b> - Bilingue</li>
+          <li><b>Anglais</b> - Bilingue</li>
+          <li><b>Arabe</b> - Bilingue</li>
+          <li><b>Espagnol</b> - Intermédiaire</li>
         </ul>
       </div>
     </section>
@@ -119,4 +189,6 @@
     </script>
   </main>
 </body>
+
 </html>
+
