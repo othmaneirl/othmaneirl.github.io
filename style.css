@@ -32,7 +32,7 @@ main {
   padding: 0 1rem;
 }
 
-.section-header {
+.collapsible {
   background-color: #3498db;
   color: #fff;
   cursor: pointer;
@@ -42,17 +42,19 @@ main {
   text-align: left;
   outline: none;
   font-size: 1.2rem;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 5px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
-.section-header:hover {
+.collapsible:hover {
   background-color: #2980b9;
 }
 
-.section-header.active {
+.collapsible.active {
   background-color: #2980b9;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .content {
@@ -61,6 +63,8 @@ main {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 ul {
@@ -82,19 +86,8 @@ a:hover {
   color: #2980b9;
 }
 
-.contact-info {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.contact-info p {
-  margin: 0;
-}
-
 @media (max-width: 600px) {
-  .contact-info {
+  header section {
     flex-direction: column;
     align-items: center;
   }
