@@ -26,13 +26,31 @@ h1 {
   color: #3498db;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-info p, .contact-info a {
+  margin: 0;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
 main {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-.collapsible {
+section {
+  margin-bottom: 1rem;
+}
+
+.section-header {
   background-color: #3498db;
   color: #fff;
   cursor: pointer;
@@ -44,15 +62,16 @@ main {
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
   border-radius: 5px 5px 0 0;
-  margin-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 
-.collapsible:hover {
+.section-header:hover, .section-header.active {
   background-color: #2980b9;
 }
 
-.collapsible.active {
-  background-color: #2980b9;
+.section-header i {
+  margin-right: 0.5rem;
 }
 
 .content {
@@ -61,30 +80,26 @@ main {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 0;
-  margin-bottom: 1.5rem;
 }
 
-.collapsible + .content {
-  border-top: none;
-}
-
-section:last-child .content {
-  margin-bottom: 0;
-}
-
-ul {
+.content ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+.content li {
   margin-bottom: 1rem;
 }
 
-li:last-child {
+.content li:last-child {
   margin-bottom: 0;
+}
+
+h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
 }
 
 a {
@@ -97,22 +112,8 @@ a:hover {
   color: #2980b9;
 }
 
-h2 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-h3 {
-  margin: 1rem 0 0.5rem;
-  font-size: 1.1rem;
-}
-
-p {
-  margin: 0.5rem 0;
-}
-
 @media (max-width: 600px) {
-  header section {
+  .contact-info {
     flex-direction: column;
     align-items: center;
   }
