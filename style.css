@@ -44,7 +44,7 @@ main {
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
   border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .section-header:hover {
