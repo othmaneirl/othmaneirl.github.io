@@ -104,16 +104,11 @@ h3 {
 
 a {
   color: #002c73;
-  text-decoration: underline; /* Added underline */
-  font-weight: bold; /* Added bold */
-  background-color: #eaf2f8; /* Added background color */
+  text-decoration: underline;
+  font-weight: bold; 
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-a:hover {
-  color: #2980b9;
-  background-color: #d0e4f1; /* Changed background color on hover */
-}
 
 @media (max-width: 600px) {
   .contact-info {
