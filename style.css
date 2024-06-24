@@ -118,3 +118,9 @@ a:hover {
     align-items: center;
   }
 }
+
+.section-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}

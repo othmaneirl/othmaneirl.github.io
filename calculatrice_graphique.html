@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projet - Calculatrice Graphique</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7b013b52e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Calculatrice Graphique</h1>
+    <h2 id="titre">Projet de Programmation Avancée</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-user"></i> IRHBOULA Othmane</p>
+      <p><i class="fas fa-calendar"></i> 2023</p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/othmaneirl/projet_progra_avancee" target="_blank">GitHub Repository</a></p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <button class="section-header">
+        <i class="fas fa-info-circle"></i> Description du projet
+      </button>
+      <div class="content">
+        <p>Implémentation d'une calculatrice graphique avec une interface utilisateur permettant d'afficher les courbes de différentes fonctions mathématiques. Le projet utilise les langages C et C++ pour une performance optimale.</p>
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-tasks"></i> Fonctionnalités principales
+      </button>
+      <div class="content">
+        <ul>
+          <li>Affichage de courbes de fonctions mathématiques</li>
+          <li>Système de coordonnées ajustable avec zoom et translation</li>
+          <li>Grille dynamique avec graduations adaptatives</li>
+          <li>Curseur interactif avec deux modes d'affichage</li>
+          <li>Gestion des couleurs pour une meilleure lisibilité</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-code"></i> Détails techniques
+      </button>
+      <div class="content">
+        <ul>
+          <li>Utilisation de OpenGL et GLUT pour l'interface graphique</li>
+          <li>Système de coordonnées normalisé entre -1 et 1</li>
+          <li>Gestion des événements clavier et redimensionnement de fenêtre</li>
+          <li>Fonctions de dessin : lignes, rectangles, cercles et texte</li>
+          <li>Calculs mathématiques pour l'ajustement de la vue et du quadrillage</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-cogs"></i> Fonctions clés
+      </button>
+      <div class="content">
+        <ul>
+          <li><code>InitGraph</code> : Initialisation de la fenêtre et de l'environnement OpenGL</li>
+          <li><code>GlutDraw</code> : Fonction principale de dessin du graphique</li>
+          <li><code>Begin2DDisplay/End2DDisplay</code> : Gestion de la vue 2D</li>
+          <li><code>Calcul_Coordonnees</code> : Ajustement des coordonnées selon le zoom et la translation</li>
+          <li><code>tracer_ligneX/tracer_ligneY</code> : Dessin du quadrillage et des graduations</li>
+          <li><code>circle</code> : Dessin du curseur circulaire</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

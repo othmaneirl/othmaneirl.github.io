@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projet - Emotion Recognition</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7b013b52e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Emotion Recognition</h1>
+    <h2 id="titre">Projet de Deep Learning</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-user"></i> IRHBOULA Othmane</p>
+      <p><i class="fas fa-calendar"></i> 2023</p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/othmaneirl/Emotion_Recognition_" target="_blank">GitHub Repository</a></p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <button class="section-header">
+        <i class="fas fa-info-circle"></i> Description du projet
+      </button>
+      <div class="content">
+        <p>Création d'un modèle de Deep Learning pour la détection d'émotions sur des images de visages, utilisant un réseau de neurones convolutifs (CNN) et le dataset CK+.</p>
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-tasks"></i> Objectifs et Méthodologie
+      </button>
+      <div class="content">
+        <ul>
+          <li>Utilisation du dataset CK+ contenant des séquences d'images d'expressions faciales</li>
+          <li>Création d'un modèle CNN avec Keras pour classifier 7 émotions : colère, dégoût, peur, joie, neutralité, tristesse et surprise</li>
+          <li>Implémentation de techniques d'augmentation de données pour améliorer la robustesse du modèle</li>
+          <li>Utilisation d'OpenCV pour la détection de visages sur des images arbitraires</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-code"></i> Technologies et Outils utilisés
+      </button>
+      <div class="content">
+        <ul>
+          <li>Python</li>
+          <li>TensorFlow et Keras pour la création et l'entraînement du modèle CNN</li>
+          <li>NumPy et Pandas pour la manipulation des données</li>
+          <li>Matplotlib pour la visualisation</li>
+          <li>OpenCV pour la détection de visages</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-brain"></i> Architecture du Modèle
+      </button>
+      <div class="content">
+        <p>Le modèle CNN utilisé comprend plusieurs couches de convolution, de batch normalization, et de pooling. Voici un aperçu de l'architecture :</p>
+       <!-- <img src="forme_du_modele.png" alt="Architecture du modèle CNN" style="max-width: 100%; height: auto;">-->
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-chart-line"></i> Résultats et Performance
+      </button>
+      <div class="content">
+        <ul>
+          <li>Le modèle atteint une précision maximale d'environ 64% sur les données de validation</li>
+          <li>Comparaison avec d'autres modèles : VGG-16 (80%), Transformer (75%), InceptionV3 (60%), ResNet (55%)</li>
+          <li>Capacité à détecter et classifier les émotions sur des images arbitraires contenant des visages</li>
+        </ul>
+        <p>Évolution de la précision et de la perte durant l'entraînement :</p>
+        <!-- <img src="evolution_precision_perte.png" alt="Évolution de la précision et de la perte" style="max-width: 100%; height: auto;"> -->
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-eye"></i> Exemples de Prédictions
+      </button>
+      <div class="content">
+        <p>Voici quelques exemples de prédictions réalisées par le modèle :</p>
+        <!-- <img src="modele_en_action.png" alt="Exemples de prédictions d'émotions" style="max-width: 100%; height: auto;"> -->
+        <p>Le modèle montre une bonne précision sur certaines images, mais peut parfois manquer de précision selon les visages.</p>
+      </div>
+    </section>
+
+    <section>
+      <button class="section-header">
+        <i class="fas fa-lightbulb"></i> Défis et Perspectives
+      </button>
+      <div class="content">
+        <p>Le modèle montre des performances variables selon les visages. Des améliorations potentielles incluent l'augmentation du nombre de données d'entraînement et l'optimisation de l'architecture du réseau pour améliorer la précision globale.</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
